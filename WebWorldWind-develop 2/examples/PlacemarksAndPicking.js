@@ -147,6 +147,7 @@ requirejs(['./WorldWindShim',
 
             var redrawRequired = highlightedItems.length > 0; // must redraw if we de-highlight previously picked items
 
+            //console.log(highlightedItems.length);
             // De-highlight any previously highlighted placemarks.
             for (var h = 0; h < highlightedItems.length; h++) {
                 highlightedItems[h].highlighted = false;
@@ -158,6 +159,7 @@ requirejs(['./WorldWindShim',
             var pickList = wwd.pick(wwd.canvasCoordinates(x, y));
             if (pickList.objects.length > 0) {
                 redrawRequired = true;
+                //console.log(pickList.objects);
             }
 
             // Highlight the items picked by simply setting their highlight flag to true.
@@ -168,10 +170,12 @@ requirejs(['./WorldWindShim',
                     // Keep track of highlighted items in order to de-highlight them later.
                     highlightedItems.push(pickList.objects[p].userObject);
 
+
                     // Detect whether the placemark's label was picked. If so, the "labelPicked" property is true.
                     // If instead the user picked the placemark's image, the "labelPicked" property is false.
                     // Applications might use this information to determine whether the user wants to edit the label
                     // or is merely picking the placemark as a whole.
+                    console.log(pickList.objects[p]);
                     if (pickList.objects[p].labelPicked) {
                         console.log("Label picked");
                     }
