@@ -282,15 +282,3 @@ requirejs(['../WorldWindShim',
 
 
 
-/*modal.style.display = "none";
-modal.style.position = "absolute";
-modal.style.zIndex = "100";
-modal.style.paddingTop = "100px";
-modal.style.left = "0";
-modal.style.top = "0";
-modal.style.width= "100%";
-modal.style.height= "100%";
-modal.style.overflow= "auto";
-modal.style.backgroundColor = "rgb(0,0,0)";
-modal.style.backgroundColor= "rgba(0,0,0,0.4)";*/
-
