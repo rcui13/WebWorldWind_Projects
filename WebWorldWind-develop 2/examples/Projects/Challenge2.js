@@ -173,18 +173,6 @@ requirejs(['../WorldWindShim',
                     clickedItems.push(pickList.objects[p].userObject);
 // step 1: define the different placemarks
 //step 2: create element, then append to parent tag
-
-                    /*var div = document.createElement("div"),
-                        modal_content = document.createElement("div"),
-                        span1 = document.createElement("span"),
-                        h1 = $("<h1>"),
-                        h3 = $("<h3>"),
-                        p = $("<p>");*/
-
-
-
-
-
                     var modal = document.getElementById("Canada");
 
                     if (pickList.objects[p].userObject instanceof WorldWind.Placemark){
