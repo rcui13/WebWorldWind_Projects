@@ -173,41 +173,41 @@ requirejs(['../WorldWindShim',
                 img = $('.image')
             ;
 
-                var modal = document.getElementById("myModal");
-                var modalInside = [
-                    {
-                        h1:  ("<strong>Toronto, Canada</strong>"),
-                        h3:  ("Birthplace of <em>Ryan Yang</em>"),
-                        p1:  ("<a id ='wikiToronto' href='https://en.wikipedia.org/wiki/Toronto,_Iowa'>Toronto</a> is the capital of the Canadian province Ontario. It is the most populous city in Canada and is where the living legend Ryan Yang resides."),
-                        p2:  ("<a id='suckItRyan' href='http://priceofoil.org/2012/11/15/its-official-canada-is-the-51st-state/'><strong>The United States of America owns Canada</strong></a>"),
-                        img: ('https://cdn.theculturetrip.com/wp-content/uploads/2019/12/gettyimages-615764386.jpg'),
-                    },
-                    {
-                        h1: ("<strong>Hockessin, Delaware</strong>"),
-                        h3: ("Residence of <em>Richard Cui</em>"),
-                        p1: ("<a id = 'wikiHockessin' href='https://en.wikipedia.org/wiki/Hockessin,_Delaware'>Hockessin</a> is a city in Delaware with a population of about 13,500 (according to the 2010 census)"),
-                        p2: ("Hockessin is safer than Wilmington, DE as there are fewer shootings. Also, it has way fewer shootings than <a id = 'torontoShootings' href = 'https://data.torontopolice.on.ca/pages/shootings'>Toronto</a>."),
-                        img: ("https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Hockessin_Friends_from_south.JPG/500px-Hockessin_Friends_from_south.JPG"),
-                    },
-                    {
-                        h1: ("<strong>Silicon Valley, California</strong>"),
-                        h3: ("Silicon Valley is the cursed place that designed the tech that forces me to work on this project"),
-                        p1: ("<a id = 'wikiSiliconValley' href='https://en.wikipedia.org/wiki/Silicon_Valley'>Silicon Valley</a> is a region in the southern part of the San Francisco Bay Area in Northern California that serves as a global center for high technology and innovation."),
-                        p2: ("Basically all the technology you use came from there and they use it to spy on you and sell your information."),
-                        img: ("https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/SJ_skyline_at_night_horizontal.jpg/600px-SJ_skyline_at_night_horizontal.jpg"),
-                    },
-                    {
-                        h1: ("<strong>South Sandwich Islands</strong>"),
-                        h3: ("South Sandwich Islands"),
-                        p1: ("<a id = 'wikiIslands' href='https://en.wikipedia.org/wiki/South_Georgia_and_the_South_Sandwich_Islands'>The South Sandwich Islands</a> is a small chain of islands about 2,000 miles away from Argentina and about 3,000 miles from Antarctica. The South Sandwich Islands is part of the British controlled territory named the “South Georgia and the South Sandwich Islands.” This  region lies in the South Atlantic Ocean, with the Scotia Sea to the west and the Weddell Sea to the South."),
-                        p2: ("The South Sandwich Islands is a mountainous region of volcanic rock and comprises of some active volcanoes. At higher elevations, the entire region is covered with ice and snow. The climate maintains 0 degrees Celsius in the winter and 8 degrees Celsius in the spring, getting only 1000 hours of daylight per year, or about 3 hours per day. The island arc consists of 11 islands, with the max area being 110 km2 and the smallest being 0.3 km2. Unlike most regions around the world, there are no permanent residents or indigenous inhabitants and the few researchers mainly stay on South Georgia. "),
-                        p3: ("The flora and fauna of the South Sandwich Islands attracts researchers and tourists alike. There are various types of birds, including the king and macaroni penguin, albatross, prions, and more. The South Georgia shag, pipit, and pintail are birds native to the region, and only observable here. The South Sandwich Islands have an absence of native mammals, but seals and whales are frequently seen in the region. Fishing improves the economy of the South Sandwich islands because licenses are sold to gain access to Patagonian toothfish, cod icefish and krill. The Marine Stewardship Council deems South Georgia and South Sandwich islands certified to fish Patagonian toothfish, but its sister species, Argentine Patagonian Toothfish, had its certification withdrawn, leaving the South Sandwich islands the only exporter of this species of fish. "),
-                        p4: ("The region fails to attract visitors because of overshadowing by its significantly larger neighbor, South Georgia. South Georgia is about 3,500 square km, over 10 times the combined size of the South Sandwich Islands, and has habitable cities. Grytviken, previously a whaling station, is a popular tourist attraction because it’s the resting spot of Ernest Shackleton, a famous polar explorer, and was the site of Corbeta Uruguay, an Argentinian military post during the Falklands War. As mentioned above, the temperatures go lower than 0 degrees Celsius to 8 degrees Celsius at most, making this a difficult region to venture.\n"),
-                        p5: ("According to the 2006 Census, there is a population of 30 people, more than Toronto, probably"),
-                        img: ("https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/21/2020/06/south-sandwich-islands-Saunders-Island-credit-tom-hart.jpg"),
-                    }
+            var modal = document.getElementById("myModal");
+            var modalInside = [
+                {
+                    h1:  ("<strong>Toronto, Canada</strong>"),
+                    h3:  ("Birthplace of <em>Ryan Yang</em>"),
+                    p1:  ("<a id ='wikiToronto' href='https://en.wikipedia.org/wiki/Toronto,_Prince_Edward_Island'>Toronto</a> is the capital of the Canadian province Ontario. It is the most populous city in Canada and is where the living legend Ryan Yang resides."),
+                    p2:  ("<a id='suckItRyan' href='http://priceofoil.org/2012/11/15/its-official-canada-is-the-51st-state/'><strong>The United States of America owns Canada</strong></a>"),
+                    img: ('https://cdn.theculturetrip.com/wp-content/uploads/2019/12/gettyimages-615764386.jpg'),
+                },
+                {
+                    h1: ("<strong>Hockessin, Delaware</strong>"),
+                    h3: ("Residence of <em>Richard Cui</em>"),
+                    p1: ("<a id = 'wikiHockessin' href='https://en.wikipedia.org/wiki/Hockessin,_Delaware'>Hockessin</a> is a city in Delaware with a population of about 13,500 (according to the 2010 census)"),
+                    p2: ("Hockessin is safer than Wilmington, DE as there are fewer shootings. Also, it has way fewer shootings than <a id = 'torontoShootings' href = 'https://data.torontopolice.on.ca/pages/shootings'>Toronto</a>."),
+                    img: ("https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Hockessin_Friends_from_south.JPG/500px-Hockessin_Friends_from_south.JPG"),
+                },
+                {
+                    h1: ("<strong>Silicon Valley, California</strong>"),
+                    h3: ("Silicon Valley is the cursed place that designed the tech that forces me to work on this project"),
+                    p1: ("<a id = 'wikiSiliconValley' href='https://en.wikipedia.org/wiki/Silicon_Valley'>Silicon Valley</a> is a region in the southern part of the San Francisco Bay Area in Northern California that serves as a global center for high technology and innovation."),
+                    p2: ("Basically all the technology you use came from there and they use it to spy on you and sell your information."),
+                    img: ("https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/SJ_skyline_at_night_horizontal.jpg/600px-SJ_skyline_at_night_horizontal.jpg"),
+                },
+                {
+                    h1: ("<strong>South Sandwich Islands</strong>"),
+                    h3: ("South Sandwich Islands"),
+                    p1: ("<a id = 'wikiIslands' href='https://en.wikipedia.org/wiki/South_Georgia_and_the_South_Sandwich_Islands'>The South Sandwich Islands</a> is a small chain of islands about 2,000 miles away from Argentina and about 3,000 miles from Antarctica. The South Sandwich Islands is part of the British controlled territory named the “South Georgia and the South Sandwich Islands.” This  region lies in the South Atlantic Ocean, with the Scotia Sea to the west and the Weddell Sea to the South."),
+                    p2: ("The South Sandwich Islands is a mountainous region of volcanic rock and comprises of some active volcanoes. At higher elevations, the entire region is covered with ice and snow. The climate maintains 0 degrees Celsius in the winter and 8 degrees Celsius in the spring, getting only 1000 hours of daylight per year, or about 3 hours per day. The island arc consists of 11 islands, with the max area being 110 km2 and the smallest being 0.3 km2. Unlike most regions around the world, there are no permanent residents or indigenous inhabitants and the few researchers mainly stay on South Georgia. "),
+                    p3: ("The flora and fauna of the South Sandwich Islands attracts researchers and tourists alike. There are various types of birds, including the king and macaroni penguin, albatross, prions, and more. The South Georgia shag, pipit, and pintail are birds native to the region, and only observable here. The South Sandwich Islands have an absence of native mammals, but seals and whales are frequently seen in the region. Fishing improves the economy of the South Sandwich islands because licenses are sold to gain access to Patagonian toothfish, cod icefish and krill. The Marine Stewardship Council deems South Georgia and South Sandwich islands certified to fish Patagonian toothfish, but its sister species, Argentine Patagonian Toothfish, had its certification withdrawn, leaving the South Sandwich islands the only exporter of this species of fish. "),
+                    p4: ("The region fails to attract visitors because of overshadowing by its significantly larger neighbor, South Georgia. South Georgia is about 3,500 square km, over 10 times the combined size of the South Sandwich Islands, and has habitable cities. Grytviken, previously a whaling station, is a popular tourist attraction because it’s the resting spot of Ernest Shackleton, a famous polar explorer, and was the site of Corbeta Uruguay, an Argentinian military post during the Falklands War. As mentioned above, the temperatures go lower than 0 degrees Celsius to 8 degrees Celsius at most, making this a difficult region to venture.\n"),
+                    p5: ("According to the 2006 Census, there is a population of 30 people, more than Toronto, probably"),
+                    img: ("https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/21/2020/06/south-sandwich-islands-Saunders-Island-credit-tom-hart.jpg"),
+                }
 
-                ];
+            ];
 
 
 
@@ -229,7 +229,7 @@ requirejs(['../WorldWindShim',
 
 
                     if (pickList.objects[l].userObject instanceof WorldWind.Placemark) {
-                       //if (pickList.objects[l].userObject.special == "")
+                        //if (pickList.objects[l].userObject.special == "")
                         //var num = pickList.objects[l].userObject.findIndex(handlePick);
                         checkName = pickList.objects[l].userObject.special;
                         console.log("label clicked");
@@ -252,16 +252,20 @@ requirejs(['../WorldWindShim',
                         p5.html(modalInside[num].p5);
                         img.attr("src", modalInside[num].img);
 
-
                         modal.style.display = "block";
 
 
 
-                }
+
+
+
+
+
+                    }
 
 
                 }
-                }
+            }
 
             if (redrawRequired){
                 wwd.redraw();
