@@ -178,7 +178,7 @@ requirejs(['../WorldWindShim',
                     {
                         h1:  ("<strong>Toronto, Canada</strong>"),
                         h3:  ("Birthplace of <em>Ryan Yang</em>"),
-                        p1:  ("<a id ='wikiToronto' href='https://en.wikipedia.org/wiki/Toronto,_Iowa'>Toronto</a> is the capital of the Canadian province Ontario. It is the most populous city in Canada and is where the living legend Ryan Yang resides."),
+                        p1:  ("<a id ='wikiToronto' href='https://en.wikipedia.org/wiki/Toronto,_Prince_Edward_Island'>Toronto</a> is the capital of the Canadian province Ontario. It is the most populous city in Canada and is where the living legend Ryan Yang resides."),
                         p2:  ("<a id='suckItRyan' href='http://priceofoil.org/2012/11/15/its-official-canada-is-the-51st-state/'><strong>The United States of America owns Canada</strong></a>"),
                         img: ('https://cdn.theculturetrip.com/wp-content/uploads/2019/12/gettyimages-615764386.jpg'),
                     },

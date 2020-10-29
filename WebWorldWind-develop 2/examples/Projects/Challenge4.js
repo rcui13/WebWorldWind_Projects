@@ -1,7 +1,7 @@
 //Challenge 1
 // Create a WorldWindow for the canvas.
 requirejs(['../WorldWindShim',
-        '../LayerManager'],
+        '../LayerManager_Copy'],
     function (WorldWind,
               LayerManager) {
         "use strict";
@@ -119,17 +119,52 @@ requirejs(['../WorldWindShim',
             placemark.alwaysOnTop = true;
             placemarkLayer.addRenderable(placemark);
         };
+        // wwd.addLayer(placemarkLayer)
+        // placemarkLayer.enabled = false;
+        // $("#layersCheck").click(function(){
+        //     if (placemarkLayer.enabled === false){
+        //         placemarkLayer.enabled = true;
+        //     }
+        //     else{
+        //         placemarkLayer.enabled = false;
+        //     }
+        //
+        // })
+        // console.log(placemarkLayer)
+//Cheap way
+        $("#nested-placemark1").click(function(){
+            wwd.addLayer(placemarkLayer);
+            console.log("test");
+        })
+        placemarkLayer.enabled = false;
+        $("#layersCheck").click(function(){
+            //wwd.addLayer(placemarkLayer);
 
 
-        wwd.addLayer(placemarkLayer);
+            if (placemarkLayer.enabled === false){
+                placemarkLayer.enabled = true;
+            }
+            else {
+                placemarkLayer.enabled = false;
+            }
+        })
+
+        //
+        // $("#layersCheck").click(function(){
+        // wwd.addLayer(placemarkLayer)
+        //
+        //     if (placemarkLayer.enabled === false){
+        //         placemarkLayer.enabled = true;
+        //     }
+        //     else{
+        //         placemarkLayer.enabled = false;
+        //     }
+        //
+        // })
+
+
 
         var layerManager = new LayerManager(wwd);
-
-
-
-
-
-
 //Challenge 2
 
 //steps1: make placemark step 2: add event listener (interact) step3: when clicked, call picking function
@@ -209,15 +244,6 @@ requirejs(['../WorldWindShim',
 
             ];
 
-
-
-
-
-
-
-
-
-
             if (pickList.objects.length > 0){
                 for (var l = 0; l < pickList.objects.length; l++) {
                     pickList.objects[l].userObject.highlighted = true;
@@ -253,14 +279,6 @@ requirejs(['../WorldWindShim',
                         img.attr("src", modalInside[num].img);
 
                         modal.style.display = "block";
-
-
-
-
-
-
-
-
                     }
 
 
@@ -271,19 +289,12 @@ requirejs(['../WorldWindShim',
                 wwd.redraw();
             }
         }
+
+
+
         wwd.addEventListener("click", handlePick);
 
 
     });
-
-//if (pickList.objects[p].userObject instanceof WorldWind.Placemark){
-//                         console.log("label picked")
-//                     }
-
-//click on placemark, need to put logic, do picking, add eventlistener change to click (trigger picking)
-// identify placemark object, if yes then click, if no then nothing
-// open modal, need to predefine modal in html
-//
-
 
 
