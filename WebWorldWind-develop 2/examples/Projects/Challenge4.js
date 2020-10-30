@@ -119,37 +119,39 @@ requirejs(['../WorldWindShim',
             placemark.alwaysOnTop = true;
             placemarkLayer.addRenderable(placemark);
         };
-        // wwd.addLayer(placemarkLayer)
-        // placemarkLayer.enabled = false;
-        // $("#layersCheck").click(function(){
-        //     if (placemarkLayer.enabled === false){
-        //         placemarkLayer.enabled = true;
-        //     }
-        //     else{
-        //         placemarkLayer.enabled = false;
-        //     }
-        //
-        // })
-        // console.log(placemarkLayer)
-//Cheap way
-        $("#nested-placemark1").click(function(){
-            wwd.addLayer(placemarkLayer);
-            console.log("test");
-        })
+//Requires screwing with LayerManager_Copy.js
+        wwd.addLayer(placemarkLayer)
         placemarkLayer.enabled = false;
         $("#layersCheck").click(function(){
-            //wwd.addLayer(placemarkLayer);
-
-
             if (placemarkLayer.enabled === false){
                 placemarkLayer.enabled = true;
             }
-            else {
+            else{
                 placemarkLayer.enabled = false;
             }
-        })
 
-        //
+        })
+        console.log(placemarkLayer)
+
+//Cheap way
+//         $("#nested-placemark1").click(function(){
+//             wwd.addLayer(placemarkLayer);
+//             console.log("test");
+//         })
+//         placemarkLayer.enabled = false;
+//         $("#layersCheck").click(function(){
+//             //wwd.addLayer(placemarkLayer);
+//
+//
+//             if (placemarkLayer.enabled === false){
+//                 placemarkLayer.enabled = true;
+//             }
+//             else {
+//                 placemarkLayer.enabled = false;
+//             }
+//         })
+
+//
         // $("#layersCheck").click(function(){
         // wwd.addLayer(placemarkLayer)
         //

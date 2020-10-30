@@ -30,7 +30,6 @@
  */
 define(function () {
     "use strict";
-
     /**
      * Constructs a layer manager for a specified {@link WorldWindow}.
      * @alias LayerManager
@@ -119,6 +118,7 @@ define(function () {
         // Update the layer state for the selected layer.
         for (var i = 0, len = this.wwd.layers.length; i < len; i++) {
             var layer = this.wwd.layers[i];
+
             if (layer.hide) {
                 continue;
             }
@@ -145,6 +145,9 @@ define(function () {
         // Synchronize the displayed layer list with the WorldWindow's layer list.
         for (var i = 0, len = this.wwd.layers.length; i < len; i++) {
             var layer = this.wwd.layers[i];
+            if (layer.displayName == "Custom Layers"){
+                layer.hide = true;
+            }
             if (layer.hide) {
                 continue;
             }
