@@ -1,7 +1,7 @@
 //Challenge 1
 // Create a WorldWindow for the canvas.
-requirejs(['../WorldWindShim',
-        '../LayerManager'],
+requirejs(['./WorldWindShim',
+        './LayerManager_Copy'],
     function (WorldWind,
               LayerManager) {
         "use strict";
