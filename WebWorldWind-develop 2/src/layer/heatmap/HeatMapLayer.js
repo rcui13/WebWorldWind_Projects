@@ -96,7 +96,7 @@ define([
         this._measuredLocations = measuredLocations;
 
         this._intervalType = HeatMapIntervalType.CONTINUOUS;
-        this._scale = ['blue', 'cyan', 'lime', 'yellow', 'red'];
+        this._scale = ['red', 'yellow', 'lime', 'cyan', 'blue'];
         this._radius = 12.5;
         this._incrementPerIntensity = 1 / max;
 

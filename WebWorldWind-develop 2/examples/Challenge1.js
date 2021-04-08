@@ -1,7 +1,7 @@
 //Challenge 1
 // Create a WorldWindow for the canvas.
 requirejs(['./WorldWindShim',
-        './LayerManager_Copy'],
+        './LayerManager'],
     function (WorldWind,
               LayerManager) {
         "use strict";
@@ -45,9 +45,9 @@ requirejs(['./WorldWindShim',
 
         var gradient = ctx2d.createRadialGradient(c, c, innerRadius, c, c, outerRadius);
 
-        gradient.addColorStop(0, 'rgb(255, 0, 0)')
+        gradient.addColorStop(0, 'rgb(255,0,0)')
         gradient.addColorStop(0.5, 'rgb(243,243,12)')
-        gradient.addColorStop(1, 'rgb(9, 125, 227)');
+        gradient.addColorStop(1, 'rgb(9,125,227)');
 
 
         var placemarkCoordinates = [
@@ -118,6 +118,7 @@ requirejs(['./WorldWindShim',
         }
         ;
         wwd.addLayer(placemarkLayer);
+
 
         var layerManager = new LayerManager(wwd);
     });

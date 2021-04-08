@@ -56,14 +56,16 @@ requirejs(['./WorldWindShim',
 
         // Generate 10000 random points to display on the HeatMap with varying intensity over the area of the whole world.
         var locations = [];
-        for (var i = 0; i < 10000; i++) {
+
+        for (var i = 0; i < 20000; i++) {
+
             locations.push(
                 new WorldWind.MeasuredLocation(
-                    -89 + (179 * Math.random()),
-                    -179 + (359 * Math.random()),
-                    Math.ceil(100 * Math.random()),
-                    console.log(Math.ceil(100 * Math.random()))
-                )
+                    -89 + (150 * Math.random()),
+                    -178 + (359 * Math.random()),
+                    Math.ceil(150*Math.random()),
+                    console.log(-178+ (359 * Math.random()))
+                    )
             );
         }
 
